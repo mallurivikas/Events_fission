@@ -90,7 +90,7 @@ cp .env.example .env
 
 ```env
 PORT=5000
-MONGODB_URI=mongodb+srv://vikas_db_user:7702180705@cluster0.xwltiuu.mongodb.net/mydb?retryWrites=true&w=majority&appName=Cluster0
+MONGODB_URI=mongodb+srv://vikas_db_user:password@cluster0.xwltiuu.mongodb.net/mydb?retryWrites=true&w=majority&appName=Cluster0
 JWT_SECRET=your_super_secret_jwt_key_change_in_production
 JWT_EXPIRE=7d
 NODE_ENV=development
