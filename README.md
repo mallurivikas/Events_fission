@@ -47,7 +47,7 @@ A full-stack event management platform built with the MERN stack
 
 ### Infrastructure
 - MongoDB Atlas for database
-- Cloudinary for image CDN
+- base64 Storage for images
 - Deployable on Render/Railway (backend)
 - Deployable on Vercel/Netlify (frontend)
 
@@ -69,7 +69,7 @@ Before running this project, ensure you have:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/mallurivikas/Events_fission
 cd Events
 ```
 
@@ -90,15 +90,15 @@ cp .env.example .env
 
 ```env
 PORT=5000
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/eventplatform?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://vikas_db_user:password@cluster0.xwltiuu.mongodb.net/mydb?retryWrites=true&w=majority&appName=Cluster0
 JWT_SECRET=your_super_secret_jwt_key_change_in_production
 JWT_EXPIRE=7d
 NODE_ENV=development
 
-# Cloudinary Config
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
+# Cloudinary Config (use these for now, or add your own)
+CLOUDINARY_CLOUD_NAME=demo
+CLOUDINARY_API_KEY=demo
+CLOUDINARY_API_SECRET=demo
 ```
 
 **Start the backend server:**
@@ -261,15 +261,8 @@ VITE_API_URL           # Backend API URL
 ### Issue: "Failed to connect to MongoDB"
 **Solution**: Check your `MONGODB_URI` is correct and your IP is whitelisted in MongoDB Atlas
 
-### Issue: "Image upload failed"
-**Solution**: Verify Cloudinary credentials in `.env` file
-
-### Issue: "CORS error"
-**Solution**: Ensure backend CORS is configured to allow your frontend origin
-
 ### Issue: "Token expired"
 **Solution**: User will be automatically logged out and redirected to login
-
 ---
 
 ## 📚 Learning Resources
@@ -285,9 +278,9 @@ VITE_API_URL           # Backend API URL
 ## To Chcek For Scoring
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch (`git checkout -b feature/ExampleFeature`)
+3. Commit your changes (`git commit -m 'Add some ExampleFeature'`)
+4. Push to the branch (`git push origin feature/ExampleFeature`)
 5. Open a Pull Request
 
 ---
@@ -298,7 +291,7 @@ Built by Vikas Malluri For Fission's Assignment using the MERN stack
 
 ---
 
-## 📞 Support
+## Support
 
 For issues or questions, please open an issue in the repository.
 
